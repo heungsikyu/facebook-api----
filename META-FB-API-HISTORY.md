@@ -29,6 +29,7 @@
 - Instagram Legacy API 최종 종료(6/29) → Instagram Graph API/Basic Display로 완전 전환
 - iOS 14/ATT 영향 대응으로 측정/타게팅 모델 조정(마케팅 API 업데이트 동반)
 - 플랫폼 약관/개발자 정책 업데이트
+ - 2020-10-24: Facebook/Instagram 기존 oEmbed 임베드 중단 → Graph API `oEmbed Read`와 앱 액세스 토큰 기반 임베드로 전환 필요
 
 ### 2021
 - Conversions API(서버사이드 이벤트) 적극 권장·확산: 브라우저 신호 감소 대응, 측정/최적화 보완
@@ -148,10 +149,12 @@ async function requestPublish() {
  - 페이지 접근 토큰: [developers.facebook.com/docs/pages/access-tokens](https://developers.facebook.com/docs/pages/access-tokens/)
  - 페이지 게시 가이드: [developers.facebook.com/docs/pages/publishing](https://developers.facebook.com/docs/pages/publishing/)
  - 권한 참고: `pages_manage_posts`(필수) [docs/permissions/reference/pages_manage_posts](https://developers.facebook.com/docs/permissions/reference/pages_manage_posts), `pages_read_engagement`(조회) [docs/permissions/reference/pages_read_engagement](https://developers.facebook.com/docs/permissions/reference/pages_read_engagement), `pages_manage_engagement`(선택) [docs/permissions/reference/pages_manage_engagement](https://developers.facebook.com/docs/permissions/reference/pages_manage_engagement), `pages_manage_metadata`(선택) [docs/permissions/reference/pages_manage_metadata](https://developers.facebook.com/docs/permissions/reference/pages_manage_metadata)
+ - oEmbed Read: [developers.facebook.com/docs/graph-api/reference/oembed-read](https://developers.facebook.com/docs/graph-api/reference/oembed-read/)
  - Open Graph 메타태그(ogp.me): [ogp.me](https://ogp.me/)
  - 웹 공유/OG 베스트 프랙티스: [developers.facebook.com/docs/sharing/webmasters/](https://developers.facebook.com/docs/sharing/webmasters/)
 
 ## 참고
 본 문서는 핵심 변화와 영향도를 빠르게 파악하기 위한 요약입니다. 실제 적용 전에는 반드시 각 제품별 최신 공식 문서를 확인하세요.
+
 
 
